@@ -1,0 +1,530 @@
+/* ===Global Settings===*/
+
+* {
+
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+
+}
+
+
+
+a { text-decoration: none; color: #000;}
+
+
+
+html {
+	background-color: #1c6369;
+	background-image: url(../images/background.jpg);
+	background-repeat: repeat-x;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: auto 100%;
+	font-family: Trebuchet MS;
+}
+
+/* ===Primary Layout=== */
+
+
+
+#top {
+	margin-top: 50px;
+}
+
+
+
+
+
+header {
+
+	background-color:  #ffea00;
+
+	min-height: 200px;
+
+	border-radius: 100px 100px 0 0;
+
+	}
+
+
+
+	
+
+.logo img.resize {
+
+	max-width: 100%;
+
+	height: auto;
+
+}
+
+
+
+header article {
+
+	padding: 30px;
+
+}
+
+	
+
+nav {
+
+	min-height: 50px;
+
+	padding: 10px;
+
+	background-color: #fff;
+
+}
+
+
+
+nav ul {
+
+	list-style-type: none;
+
+}
+
+
+
+nav li {
+
+	display: inline;
+
+	text-align: center;
+
+}
+
+
+
+nav a{
+
+	display: block;
+
+	text-decoration: none;
+
+	font-weight: bold;
+
+	color: #9c0000;
+
+	position: relative;
+
+}
+
+
+
+nav a:hover {
+
+	color: #9c0000;
+
+}
+
+
+
+nav a:before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 2px;
+
+  bottom: 0;
+
+  left: 0;
+
+  background-color: #9c0000;
+
+  visibility: hidden;
+
+  -webkit-transform: scaleX(0);
+
+  transform: scaleX(0);
+
+  -webkit-transition: all 0.3s ease-in-out 0s;
+
+  transition: all 0.3s ease-in-out 0s;
+
+}
+
+
+
+nav a:hover:before {
+
+  visibility: visible;
+
+  -webkit-transform: scaleX(1);
+
+  transform: scaleX(1);
+
+}
+
+
+
+.slider{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    float: left;
+    position: absolute;
+	line-height: 80%;
+}
+
+.slidecontent {
+	margin-top: 20px;
+}
+
+#first {
+	background-image: url(../images/truck.jpg);
+	padding: 10px;
+	color: #fff;
+}
+
+#second {
+	background-image: url(../images/termite.jpg);
+	padding: 10px;
+	color: #fff;
+}
+
+#second h3 {
+	text-align: right;
+	padding-right: 10px;
+}
+
+#third {
+	background-image: url(../images/cockroach.jpg);
+	padding: 10px;
+	color: #fff;
+}
+
+#third a{
+	display: block;
+	border: 1px solid #fff;
+	padding: 10px;
+	width: 150px;
+	color: #fff;
+	transition: all .3s ease;
+	line-height: 100%;
+}
+
+#third a:hover {
+	background-color: #fff;
+	color: #171717;
+}
+
+#main {
+
+	background-color: #fff;
+
+	min-height: 100px;
+
+	padding: 15px;
+
+}
+
+
+
+#main section {
+
+	background-color: #fff;
+
+	min-height: 100px;
+
+}
+
+
+
+#main aside {
+
+	background-color: #7f7f8a;
+
+	min-height: 100px;
+
+}
+
+
+
+#main h1 {
+
+  position: relative;
+
+  text-align: center;
+
+}
+
+
+
+#main h1 span {
+
+  background: #fff;
+
+  padding: 0 15px;
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+
+
+#main h1:before {
+
+  background: #000;
+
+  content: "";
+
+  display: block;
+
+  height: 1px;
+
+  position: absolute;
+
+    top: 50%;
+
+  width: 100%;
+
+}
+
+
+
+#main h1:before {
+
+  left: 0;
+
+}
+
+#main p:last-child {
+	padding-bottom: 20px;
+}
+
+footer {
+
+	background-color:  #ffea00;
+
+	min-height: 100px;
+
+}
+
+
+
+.large {
+
+	background-color: #ffea00;
+
+	min-height: 100px;
+
+	padding: 15px;
+
+}
+
+
+
+.large h1 {
+
+	color: #9b0000;
+
+	text-align: center;
+
+}
+
+
+
+.large ul{
+
+	list-style-image: url(../images/laser_sm.png);
+
+}
+
+
+
+.large a{
+
+	color: #000;
+
+	transition: all .3s ease;
+
+}
+
+
+
+.large a:hover{
+
+	color: #9b0000;
+
+}
+
+
+
+.copy {
+
+	min-height: 50px;
+
+	background-color: #372f2d;
+
+	color: #b8b2b1;
+
+	padding: 10px;
+
+}
+
+
+
+.copy a {
+
+	color: #fff;
+
+	text-decoration: none;
+
+	transition: all .3s ease-in;
+
+}
+
+
+
+.copy a:hover{
+
+	color: #1a1716;
+
+}
+
+.indicator {
+	display: none;
+}
+
+.secondaryhead {
+	background-image: url(../images/truck2.jpg);
+	height: 150px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.3em;
+	padding-top: 15px;
+}
+
+/*===Contact Form Styling===*/
+
+form, fieldset{
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+label {
+float: left;
+clear: left;
+margin: 0 20px 0 0;
+width: 20%;
+}
+
+input {
+	padding-left: 5px;
+	height: 35px;
+	margin: 0 0 20px 0;
+	width: 80%;
+}
+
+input[type=submit] {
+background: rgba(248,80,50,1);
+background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(240,47,23,1) 50%, rgba(155,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(241,111,92,1)), color-stop(50%, rgba(240,47,23,1)), color-stop(100%, rgba(155,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(240,47,23,1) 50%, rgba(155,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(240,47,23,1) 50%, rgba(155,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(240,47,23,1) 50%, rgba(155,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(240,47,23,1) 50%, rgba(155,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#9b0000', GradientType=0 );
+border-radius: 20px;
+padding: 5px;
+color: #fff;
+float: left;
+clear: both;
+}
+
+input[type=submit]:hover {
+background: rgba(155,0,0,1);
+background: -moz-linear-gradient(top, rgba(155,0,0,1) 0%, rgba(240,47,23,1) 50%, rgba(241,111,92,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(155,0,0,1)), color-stop(50%, rgba(240,47,23,1)), color-stop(100%, rgba(241,111,92,1)));
+background: -webkit-linear-gradient(top, rgba(155,0,0,1) 0%, rgba(240,47,23,1) 50%, rgba(241,111,92,1) 100%);
+background: -o-linear-gradient(top, rgba(155,0,0,1) 0%, rgba(240,47,23,1) 50%, rgba(241,111,92,1) 100%);
+background: -ms-linear-gradient(top, rgba(155,0,0,1) 0%, rgba(240,47,23,1) 50%, rgba(241,111,92,1) 100%);
+background: linear-gradient(to bottom, rgba(155,0,0,1) 0%, rgba(240,47,23,1) 50%, rgba(241,111,92,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', endColorstr='#f16f5c', GradientType=0 );
+text-shadow: #000 1px 1px;
+}
+
+textarea {
+	margin: 0 0 20px 0;
+	height: 170px;
+	width: 80%;
+}
+
+.library img{
+	width: 200px;
+	padding-right: 10px;
+}
+
+
+/* ===General=== */
+
+
+
+.vcenter {
+
+	position: relative;
+
+	top: 50%;
+
+	transform: translateY(-50%);
+
+}
+
+.left {
+float: left;
+}
+
+.right: {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+/* ===Media Query=== */
+
+@media all and (max-width: 768px) {
+    #hide {
+        display:none;
+    }
+	
+#top {
+	margin-top: 0;
+}
+
+header {
+	border-radius: 0;
+}
+
+.slide {
+	line-height: 150%;
+
+}
+
+.slide h1 {
+	line-height: 100%;
+}
+
+nav a:hover:before {
+	visibility: hidden;
+}
